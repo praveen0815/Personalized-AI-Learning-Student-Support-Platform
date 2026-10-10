@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f6f8;
+  --foreground: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --text-page-title: 1.25rem;
+  --text-page-title--line-height: 1.3;
+  --text-page-title--font-weight: 600;
+
+  --text-section: 0.9375rem;
+  --text-section--line-height: 1.3;
+  --text-section--font-weight: 600;
+
+  --text-card-title: 0.875rem;
+  --text-card-title--line-height: 1.35;
+  --text-card-title--font-weight: 600;
+
+  --text-body: 0.8125rem;
+  --text-body--line-height: 1.45;
+  --text-body--font-weight: 400;
+
+  --text-secondary: 0.75rem;
+  --text-secondary--line-height: 1.4;
+  --text-secondary--font-weight: 400;
+
+  --text-label: 0.6875rem;
+  --text-label--line-height: 1.3;
+  --text-label--letter-spacing: 0.04em;
+  --text-label--font-weight: 500;
+
+  --text-meta: 0.6875rem;
+  --text-meta--line-height: 1.4;
+  --text-meta--font-weight: 400;
+
+  --text-status: 0.6875rem;
+  --text-status--line-height: 1.3;
+  --text-status--font-weight: 500;
+  --text-status--letter-spacing: 0.04em;
+
+  --text-kpi: 1.5rem;
+  --text-kpi--line-height: 1.25;
+  --text-kpi--font-weight: 600;
+
+  --text-nav: 0.8125rem;
+  --text-nav--line-height: 1.3;
+  --text-nav--font-weight: 500;
+
+  --text-button: 0.75rem;
+  --text-button--line-height: 1.3;
+  --text-button--font-weight: 500;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
