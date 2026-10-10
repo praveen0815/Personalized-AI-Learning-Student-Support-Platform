@@ -224,26 +224,6 @@ Copy-Item .env.example .env
 
 Configure the required values in `backend/.env`.
 
-For local embeddings without an embedding API key:
-
-```env
-EMBEDDING_PROVIDER=local
-EMBEDDING_MODEL=BAAI/bge-small-en-v1.5
-EMBEDDING_DIMENSION=384
-
-DATABASE_URL=postgresql+psycopg://postgres:postgres@localhost:5432/learning_kb
-```
-
-For live AI tutoring and assessment generation, configure an OpenAI-compatible chat provider:
-
-```env
-LLM_PROVIDER=openai
-LLM_MODEL=gpt-4o-mini
-LLM_API_KEY=your_actual_api_key
-```
-
-Use your own valid API key. Never commit `.env` or expose API keys in the frontend.
-
 ### 4. Run the Backend
 
 From the `backend` directory:
@@ -303,7 +283,6 @@ pytest
 For PostgreSQL and pgvector integration tests, configure `INTEGRATION_DATABASE_URL` to point to a separate test database and run:
 
 ```powershell
-$env:INTEGRATION_DATABASE_URL = "postgresql+psycopg://postgres:postgres@localhost:5432/learning_kb_test"
 pytest -m integration
 ```
 
